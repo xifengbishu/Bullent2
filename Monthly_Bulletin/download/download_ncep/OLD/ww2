@@ -1,0 +1,70 @@
+ Copyright (C) 1995-2013 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 6.1.2
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+Variable: f
+Type: file
+filename:	uwnd.10m.mon.mean
+path:	uwnd.10m.mon.mean.nc
+   file global attributes:
+      Conventions : COARDS
+      title : monthly mean u wind
+      history : renamevars Thu Feb  1 09:41:58 2001 from uwnd10m.mon.mean.nc
+Tue Jul  6 00:21:54 1999: ncrcat uwnd10m.mon.mean.nc /Datasets/ncep.reanalysis.derived/surface_gauss/uwnd10m.mon.mean.nc /dm/dmwork/nmc.rean.ingest/combinedMMs/uwnd10m.mon.mean.nc
+created 97/10/04 by CAS (netCDF2.3)
+      description : Data is from NMC initialized reanalysis
+(4x/day).  It consists of T62 variables interpolated to
+pressure surfaces from model (sigma) surfaces.
+      platform : Model
+      references : http://www.esrl.noaa.gov/psd/data/gridded/data.ncep.reanalysis.derived.html
+      NCO : 20121013
+   dimensions:
+      lat = 94
+      lon = 192
+      time = 801  // unlimited
+   variables:
+      float lat ( lat )
+         units :	degrees_north
+         actual_range :	( 88.542, -88.542 )
+         long_name :	Latitude
+         standard_name :	latitude
+         axis :	Y
+
+      float lon ( lon )
+         units :	degrees_east
+         long_name :	Longitude
+         actual_range :	(  0, 358.125 )
+         standard_name :	longitude
+         axis :	X
+
+      double time ( time )
+         units :	hours since 1-1-1 00:00:0.0
+         long_name :	Time
+         actual_range :	( 17067072, 17651472 )
+         delta_t :	0000-01-00 00:00:00
+         avg_period :	0017-00-00 00:00:00
+         prev_avg_period :	0000-00-01 00:00:00
+         standard_name :	time
+         axis :	T
+
+      float uwnd ( time, lat, lon )
+         long_name :	Monthly Mean of U-Wind
+         valid_range :	( -102.2, 102.2 )
+         actual_range :	( -14.46935, 14.4571 )
+         units :	m/s
+         add_offset :	 0
+         scale_factor :	 1
+         missing_value :	-9.96921e+36
+         precision :	2
+         least_significant_digit :	1
+         GRIB_id :	11
+         var_desc :	u-wind
+         dataset :	CDC Derived NCEP Reanalysis Products
+         level_desc :	10 m
+         statistic :	Mean
+         parent_stat :	Individual Obs
+         _FillValue :	-9.96921e+36
+
+ 

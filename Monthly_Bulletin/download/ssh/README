@@ -1,0 +1,14 @@
+915*1080
+nrt_global_merged_msla_h_*  1/3 ( Monthly_Bulletin USED !! )
+nrt_global_merged_msla_h_lr_* 1
+nrt_global_merged_msla_h_qd_*  1/4
+
+# ============ 2014-10-16=========
+# === new version
+
+dt_monthly_mean has 1/4 dt_global_allsat_msla_h_y2006_m10.nc
+
+ssh2/ori_file 1/3  before 2014-09 used
+ssh2/new_metedate 1/4  after 2014-09 used
+
+

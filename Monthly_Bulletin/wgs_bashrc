@@ -1,0 +1,150 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+# User specific aliases and functions
+#export NETCDF=/public/soft/libs/netcdf362-intel11
+#source /public/scripts/ompi142-intel11.sh
+#source /public/scripts/mvapich217-intel11.sh
+#export LD_LIBRARY_PATH=/public/soft/intel11/Compiler/11.1/069/lib/intel64:$LD_LIBRARY_PATH
+
+
+# ==========================================================
+# === WGS specific aliases and functions for WRF-realtime
+# ===           And some Personal habits
+# ===        Do not effect other people rights
+# ==========================================================
+PATH=$PATH:$NETCDF/bin
+export PATH
+
+alias lh='ls -lhrt'
+alias cp='cp -i'
+alias rm='rm -i'
+alias mv='mv -i'
+alias l='ls -F'
+alias c='clear'
+alias dis='display'
+alias vimf90='vim -u NONE '
+#alias su='su ; source /etc/profile'
+alias xterm='xterm -fn 10x20 -bg grey91 -rightbar'
+#alias freenodes='/WGS/WGS_COLLECT/gao_softwares/freenodes.sh'
+#alias csh2sh='/public/wind_flow/flow/WGS/WGS_COLLECT/WGS_COLLECT/gao_goods/csh2sh.sh'
+#alias g1print='/public/wind_flow/flow/WGS/soft/WRFV331/WPS/util/g1print.exe'
+#alias g2print='/public/wind_flow/flow/WGS/soft/WRFV331/WPS/util/g2print.exe'
+
+# --- VAPOR, 13 Mar 2011.
+#source /home/students/wang/WGS_COLLECT/VAPOR/vapor-2.0.2/bin/vapor-setup.sh
+
+# ---- openmpi
+# openmpi=/usr/local/openmpi
+# PATH=$openmpi/bin:$PATH
+# export openmpi PATH
+
+# ----- RIP
+# RIP_ROOT=/usr/local/RIP4
+# PATH=$RIP_ROOT:${PATH}
+# export RIP_ROOT
+# User specific aliases and functions
+
+
+# User specific aliases and functions
+#. /public/scripts/ompi142-pgi102.sh
+
+# --- NetCDF
+#NETCDF=/public/soft/libs/netcdf362-pgi102
+NETCDF=/export/home/songjun/WGS/soft/netcdf363
+PATH=$NETCDF/bin:$PATH
+export PATH NETCDF
+
+# ---- PGI
+#PGI=/opt/pgi
+#PATH=.:$PGI/linux86/10.6/bin:$PATH
+#export PATH PGI
+#export MANPATH=$MANPATH:$PGI/linux86/10.6/man
+#export LD_LIBRARY_PATH=$PGI/linux86/10.6/lib:$LD_LIBRARY_PATH
+#export LM_LICENSE_FILE=$PGI/license.dat:$LM_LICENSE_FILE
+
+# ---- intel
+#INTEL=/opt/intel
+#PATH=.:$INTEL/bin:$PATH
+#export PATH INTEL
+#export MANPATH=$MANPATH:$INTEL/man
+#export LD_LIBRARY_PATH=$INTEL/lib:$LD_LIBRARY_PATH
+#export LM_LICENSE_FILE=$INTEL/licenses/l_PB37WNLW.lic:$LM_LICENSE_FILE
+
+# --- wgrib2
+wgrib2=$HOME/WGS/soft/grib2/wgrib2
+PATH=$PATH:$wgrib2
+export PATH wgrib2
+
+# --- shc
+shc_dir=$HOME/WGS/soft/shc
+PATH=$PATH:${shc_dir}
+export PATH shc_dir
+export MANPATH=$MANPATH:${shc_dir}/man
+
+# --- NCL
+NCARG_ROOT=$HOME/WGS/soft/ncl/ori_source/test
+#NCARG_ROOT=/public/wind_flow/wind/soft/ncl
+PATH=$PATH:$NCARG_ROOT/bin
+export PATH NCARG_ROOT
+export MANPATH=$MANPATH:$NCARG_ROOT/man
+
+# --- ncview
+NCVIEW=$HOME/WGS/soft/ncview
+PATH=$PATH:$NCVIEW/bin
+export PATH NCVIEW
+export MANPATH=$MANPATH:$NCVIEW/man
+
+# --- NCO
+NCO=$HOME/WGS/soft/nco
+PATH=$PATH:$NCO/bin
+export PATH NCO
+
+# --- jasper
+JASPERINC=$HOME/WGS/soft/jasper/include
+JASPERLIB=$HOME/WGS/soft/jasper/lib
+export PATH JASPERINC JASPERLIB
+
+# --- R
+R=$HOME/WGS/soft/R/R-311
+PATH=$PATH:$R/bin
+RLIB=$HOME/WGS/soft/R/R-311/lib64
+RSHARE=$HOME/WGS/soft/R/R-311/share
+export PATH RLIB RSHARE R
+
+# --- GrADS
+GADDIR=/export/home/songjun/WGS/soft/grads/data
+GASCRP=/export/home/songjun/WGS/soft/grads/lib
+PATH=$PATH:/export/home/songjun/WGS/soft/grads/bin
+export PATH GADDIR GASCRP
+
+# --- torque PBS
+#PATH=$PATH:/usr/local/sbin:/usr/local/bin
+#TORQUECFG=/var/spool/torque
+
+# --- mpif90
+#openmpi=/public/soft/ompi142-pgi102
+#openmpi=/public/soft/ompi142-intel11
+#PATH=${openmpi}/bin:$PATH
+#export LD_LIBRARY_PATH=${openmpi}/lib:$LD_LIBRARY_PATH
+#export MANPATH=${openmpi}/share/man:$MANPATH
+
+# --- WRF
+WRFIO_NCD_LARGE_FILE_SUPPORT=1
+BUFR=1
+CRTM=1
+# --- RTTOV is better then CRTM ,so fix it
+#RTTOV=/public/wind_flow/flow/WGS/soft/RTTOV/rttov102/rttov_pgi
+#export PATH WRFIO_NCD_LARGE_FILE_SUPPORT BUFR CRTM RTTOV
+export PATH WRFIO_NCD_LARGE_FILE_SUPPORT BUFR CRTM
+
+export LD_LIBRARY_PATH=${openmpi}/lib:/public/soft/intel11/Compiler/11.1/069/lib/intel64:/usr/local/lib:$LD_LIBRARY_PATH
+
+ulimit -s unlimited
+
+#sh /export/home/songjun/WGS/huyou.sh 
+# ===================
+

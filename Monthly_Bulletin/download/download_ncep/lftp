@@ -1,0 +1,5 @@
+pget -n 40 ftp://ftp.cdc.noaa.gov/Datasets/ncep.reanalysis.derived/surface_gauss/uwnd.10m.mon.mean.nc
+pget -n 40 ftp://ftp.cdc.noaa.gov/Datasets/ncep.reanalysis.derived/surface_gauss/vwnd.10m.mon.mean.nc
+pget -n 40 ftp://ftp.cdc.noaa.gov/Datasets/ncep.reanalysis.derived/surface_gauss/air.2m.mon.mean.nc
+pget -n 40 ftp://ftp.cdc.noaa.gov/Datasets/ncep.reanalysis.derived/surface/slp.mon.mean.nc
+pget -n 40 ftp://ftp.cdc.noaa.gov/Datasets/noaa.oisst.v2/sst.mnmean.nc

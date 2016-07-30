@@ -1,0 +1,3 @@
+mget: nrt_global_allsat_msla_h_20150401_20150407.nc.gz: file already exists and xfer:clobber is unset
+mget: nrt_global_allsat_msla_h_20150402_20150408.nc.gz: file already exists and xfer:clobber is unset
+lftp: ftp.aviso.oceanobs.com: Name or service not known

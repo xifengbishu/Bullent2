@@ -1,0 +1,31 @@
+pget: uwnd.10m.mon.mean.nc: file already exists and xfer:clobber is unset
+pget: vwnd.10m.mon.mean.nc: file already exists and xfer:clobber is unset
+pget: air.2m.mon.mean.nc: file already exists and xfer:clobber is unset
+pget: slp.mon.mean.nc: file already exists and xfer:clobber is unset
+pget: sst.mnmean.nc: file already exists and xfer:clobber is unset
+ncdump: air.2m.mon.mean.nc: NetCDF: Unknown file format
+ncdump: slp.mon.mean.nc: NetCDF: Unknown file format
+ncdump: uwnd.10m.mon.mean.nc: NetCDF: Unknown file format
+ncdump: vwnd.10m.mon.mean.nc: NetCDF: Unknown file format
+ncdump: air.2m.mon.mean.nc: NetCDF: Unknown file format
+ncdump: slp.mon.mean.nc: NetCDF: Unknown file format
+ncdump: uwnd.10m.mon.mean.nc: NetCDF: Unknown file format
+ncdump: vwnd.10m.mon.mean.nc: NetCDF: Unknown file format
+ncdump: air.2m.mon.mean.nc: NetCDF: Unknown file format
+ncdump: slp.mon.mean.nc: NetCDF: Unknown file format
+ncdump: uwnd.10m.mon.mean.nc: NetCDF: Unknown file format
+ncdump: vwnd.10m.mon.mean.nc: NetCDF: Unknown file format
+ww=20150112: Command not found.
+ww: Undefined variable.
+ww=20150408: Command not found.
+ww: Undefined variable.
+ww=20151028: Command not found.
+ww: Undefined variable.
+ww=20151111: Command not found.
+ww: Undefined variable.
+ww=20151217: Command not found.
+ww: Undefined variable.
+ww=20160111: Command not found.
+ww: Undefined variable.
+ww=20160316: Command not found.
+ww: Undefined variable.
